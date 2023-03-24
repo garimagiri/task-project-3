@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200&display=swap');
+
+:root {
+    --primary-color:#c01818 ;
+    --dark-gray: #6B7280;
+    --off-white: #F3F4F6;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #6B7280;
+    margin: 0;
+    letter-spacing: 1px;
+}
+.btn-tour {
+    background-color: #c01818 ;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    text-align: center;
+    padding: 0.8rem 2rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  }
+  
+  .btn-tour:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: 20px;
+    transition: 0.5s;
+  }
+  
+  .btn-tour:hover{
+    padding-right: 2.5rem;
+    padding-left:1.5rem;
+    background-color: #ffa63b;
+  }
+  
+  .btn-tour:hover:after {
+    opacity: 1;
+    right: 15px;
+  }
+.close-btn{
+    background-color: gray ;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    text-align: center;
+    padding: 0.8rem 2rem;
+    cursor: pointer;  
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+.first-card{
+    background-color: #F3F4F6;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    width: 75%;
+}
+.os-cards:hover{
+    box-shadow: 0 30px 60px -8px rgba(0, 0, 0,.7);
+    border-radius: 30px;
+    background-color: #e6e6eb;
+    
+}
+.continue-btn {
+    background-color: #c01818;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    text-align: center;
+    padding: 0.8rem 2rem;   
+    cursor: pointer;   
+  }
+  .buy-now-btn{
+    border: 1px solid #c01818;
+    border-radius: 25px;
+    color: #c01818;
+    text-align: center;
+    padding: 0.8rem 2rem;   
+    cursor: pointer;
+  }
+  .buy-now-btn:hover{
+    background-color: #ffa63b;
+  }
+.mid-btn{
+    border: 1px solid #F3F4F6;
+    background-color: #24318d;
+}
+  .box-item {
+    position: relative;
+    -webkit-backface-visibility: hidden; 
+    margin-bottom: 35px;
+  }
+  
+  .flip-box {
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+  }
+  
+  .flip-box-front,
+  .flip-box-back {
+    background-color: #f2f2f2;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    min-height: 365px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    -ms-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+    transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+    -webkit-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .flip-box-mid{
+    background-color: #24318d;
+    color: #F3F4F6;
+  }
+  
+  .flip-box-front {
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-front {
+    -ms-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-back {
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box .inner {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 30px 32px 32px 32px;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    z-index: 2;
+    
+    transform: translateY(-50%) translateZ(60px) scale(.94);
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
+    -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
+    top: 50%;
+  }
+  .rounded-circle{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    padding: 0.6rem 1rem;
+  }
+  .arrow-text {
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    font-size: 30px;
+    margin-left: 10px;
+    color: #ff1c1c;
+    border-radius: 50%;
+    font-weight: 900;
+    animation: blink normal 1.5s infinite ease-in-out;
+}
+@keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
